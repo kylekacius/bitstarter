@@ -5,10 +5,10 @@ var app = express.createServer(express.logger());
 app.get('/', function(request, response) {
   response.send('Hello Wasdfadforld 2!');
 
-fs.writeFile('index.html', 'Hello Node', function (err) {
-  if (err) throw err;
-  console.log('It\'s saved!');
-});
+fs.readFileSync(index.html);
+
+
+
 
 buffer.toString("utf-8", 0, 12)
 });
