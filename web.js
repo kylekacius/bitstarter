@@ -1,11 +1,11 @@
 var express = require('express');
-
 var app = express.createServer(express.logger());
+
 
 app.get('/', function(request, response) {
   response.send('Hello Wasdfadforld 2!');
 
-var fileinput = fs.readFileSync(index.html);
+var fileinput = fs.readFileSync("index.html");
 
 
 var test = new Buffer(fileinput);
