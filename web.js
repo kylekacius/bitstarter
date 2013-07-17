@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express.createServer(express.logger());
+var sys=require("sys"), fs=require("fs");
 var fileinput = fs.readFileSync("index.html");
 var test = new Buffer(fileinput);
 var readynow = test.toString("utf-8");
